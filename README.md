@@ -1,9 +1,9 @@
 # 🚀 Grafana Monitoring Dashboard Setup (Beginner-Friendly Guide)
 
 Welcome to this **step-by-step beginner-friendly guide** on creating
-your **first Grafana Monitoring Dashboard**.\
+your **first Grafana Monitoring Dashboard**.
 This guide uses **Prometheus + Grafana** to monitor your server's
-**health, CPU usage, memory usage, and disk usage**.\
+**health, CPU usage, memory usage, and disk usage**.
 Perfect for **beginners in DevOps, Linux, and Cloud Monitoring**. 🌍
 
 ------------------------------------------------------------------------
@@ -11,8 +11,8 @@ Perfect for **beginners in DevOps, Linux, and Cloud Monitoring**. 🌍
 ## 📌 Step 1: Open Query Editor
 
 1.  In your Grafana panel, you will see **Metric → Select metric**
-    option.\
-2.  Just above it, you will find **Builder / Code toggle**.\
+    option.
+2.  Just above it, you will find **Builder / Code toggle**.
 3.  Click on **Code** → A **textbox** will open where you can write
     queries.
 
@@ -32,8 +32,8 @@ up
 {{instance}}
 ```
 
--   For **Visualization** → Keep it as **Time series**.\
--   (Optional: You can also select **Stat panel** for a simple view).\
+-   For **Visualization** → Keep it as **Time series**.
+-   (Optional: You can also select **Stat panel** for a simple view).
 -   Click **Run queries → Apply** ✅
 
 ------------------------------------------------------------------------
@@ -70,7 +70,7 @@ Add this query:
 (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100
 ```
 
--   Set **Unit** → Percent\
+-   Set **Unit** → Percent
 -   Set **Legend** as:
 
 ``` bash
@@ -102,15 +102,15 @@ Use this query:
 
 ## 📌 Step 6: Save Your Dashboard
 
-1.  On the top-right, click **Save Dashboard** (Blue Button).\
+1.  On the top-right, click **Save Dashboard** (Blue Button).
 2.  Name it:
 
 ``` bash
 My First Monitoring Dashboard
 ```
 
-3.  Save it ✅\
-4.  Set **Time range** → Last 15 minutes.\
+3.  Save it ✅
+4.  Set **Time range** → Last 15 minutes.
 5.  Set **Auto-refresh** → 10s.
 
 🎉 Congratulations! You have successfully created your **first Grafana
